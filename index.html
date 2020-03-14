@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+Cola = "CocaCola"
+PrCola = "15"
+
+Burger = "Burger"
+PrBurger = "50"
+
+Beer = "Bere"
+PrBeer = "20"
+
+Soup = "Supa"
+PrSoup = "25"
+
+
+alert("Bine ati venit la noi!!!");
+alert(`Menu nostru ${Cola} ${PrCola}MDL`)
+alert(`Menu nostru ${Burger} ${PrBurger}MDL`)
+alert(`Menu nostru ${Beer} ${PrBeer}MDL`)
+alert(`Menu nostru ${Soup} ${PrSoup}MDL`)
+
+QCola = prompt(`Cite CocaCola doriti?`)
+QBurger = prompt(`Cite Burger doriti?`)
+QBeer = prompt(`Cite Beri doriti?`)
+QSoup = prompt(`Cite Supe doriti?`)
+
+TotalCola = `${QCola * PrCola}`
+TotalBurger = `${QBurger * PrBurger}`
+TotalBeer = `${QBeer * PrBeer}`
+TotalSoup = `${QSoup * PrSoup}`
+
+
+Total = +TotalCola + +TotalBurger + +TotalBeer + +TotalSoup
+alert(`Suma  ${Total}MDL`)
+MinTotal = 200
+Delivery = 50
+
+if (Total < MinTotal) {
+    alert(` Livrarea 50MDL + ${Total}MDL
+            Total ${+Total +Delivery}MDL`)
+} else if ( Total > MinTotal) {
+    alert(`Livrarea Gratuita
+            Total ${+Total}MDL`)
+} else {
+    alert()
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
